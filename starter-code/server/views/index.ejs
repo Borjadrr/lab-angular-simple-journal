@@ -1,2 +1,11 @@
 <h1><%= title %></h1>
-<p>Welcome to <%= title %></p>
+
+<section>
+  <% journalEntry.forEach((journal) => {%>
+    <article class="">
+      <p><%= journal.date %> </p><br>
+      <h2><%= journal.title %> </h2><br>
+      <p><%= journal.content %> </p>
+    </article>
+  <%})%>
+</section>
